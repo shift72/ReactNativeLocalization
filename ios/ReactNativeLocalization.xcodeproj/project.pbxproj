@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		483AA30722F93F62001D980E /* ReactLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D9D281B6AD51800CF3A83 /* ReactLocalization.m */; };
 		7B5D9D291B6AD51800CF3A83 /* ReactLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D9D281B6AD51800CF3A83 /* ReactLocalization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		483AA30922F93F62001D980E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B5D9D081B6AD0EA00CF3A83 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,12 +33,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		483AA30D22F93F62001D980E /* libReactNativeLocalization-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libReactNativeLocalization-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5D9D0A1B6AD0EA00CF3A83 /* libReactNativeLocalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeLocalization.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5D9D271B6AD51800CF3A83 /* ReactLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactLocalization.h; sourceTree = "<group>"; };
 		7B5D9D281B6AD51800CF3A83 /* ReactLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactLocalization.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		483AA30822F93F62001D980E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B5D9D071B6AD0EA00CF3A83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5D9D0A1B6AD0EA00CF3A83 /* libReactNativeLocalization.a */,
+				483AA30D22F93F62001D980E /* libReactNativeLocalization-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +78,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		483AA30522F93F62001D980E /* ReactNativeLocalization-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483AA30A22F93F62001D980E /* Build configuration list for PBXNativeTarget "ReactNativeLocalization-tvOS" */;
+			buildPhases = (
+				483AA30622F93F62001D980E /* Sources */,
+				483AA30822F93F62001D980E /* Frameworks */,
+				483AA30922F93F62001D980E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReactNativeLocalization-tvOS";
+			productName = ReactNativeLocalization;
+			productReference = 483AA30D22F93F62001D980E /* libReactNativeLocalization-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		7B5D9D091B6AD0EA00CF3A83 /* ReactNativeLocalization */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B5D9D1E1B6AD0EA00CF3A83 /* Build configuration list for PBXNativeTarget "ReactNativeLocalization" */;
@@ -104,11 +140,20 @@
 			projectRoot = "";
 			targets = (
 				7B5D9D091B6AD0EA00CF3A83 /* ReactNativeLocalization */,
+				483AA30522F93F62001D980E /* ReactNativeLocalization-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		483AA30622F93F62001D980E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				483AA30722F93F62001D980E /* ReactLocalization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B5D9D061B6AD0EA00CF3A83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,6 +165,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		483AA30B22F93F62001D980E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		483AA30C22F93F62001D980E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		7B5D9D1C1B6AD0EA00CF3A83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -258,6 +323,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		483AA30A22F93F62001D980E /* Build configuration list for PBXNativeTarget "ReactNativeLocalization-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				483AA30B22F93F62001D980E /* Debug */,
+				483AA30C22F93F62001D980E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7B5D9D051B6AD0EA00CF3A83 /* Build configuration list for PBXProject "ReactNativeLocalization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
